@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.TodoPage{
+  display: flex;
+  margin-top: 100px;
+}
+.TodoForm{
+  width: 50%;
+}
+.TodoList{
+  width: 50%;
+}
+.TodoList li{
+  text-align: left;
+  padding-left: 40%;
+}
+.TodoForm button:hover{
+  cursor: pointer;
+  background-color: #d7d7d7;
+}
+.TodoForm button{
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+  border-radius: 40px;
+  border: 2px solid;
+}

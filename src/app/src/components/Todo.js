@@ -6,7 +6,8 @@ const Todo = () => {
     const [task, setTask] = useState("");
 
 
-    const addToDo = async () => {
+    const addToDo = async (e) => {
+        e.preventDefault()
         const res = await axios.post('http://localhost:8000/todos/', { description: task })
         if (res && res.status === 201) {
             console.log('posted!');
